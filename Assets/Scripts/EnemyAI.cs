@@ -32,32 +32,32 @@ public class EnemyAI : MonoBehaviour
         else if (distanceToTarget <= chaseRange)
         {
             isProvoked = true;
-            navMeshAgent.SetDestination(target.position);
+            
         }
     }
 
     private void EngageTarget()
     {
-        if (something)
+        if (distanceToTarget >= navMeshAgent.stoppingDistance)
         {
             ChaseTarget();
         }
 
-        if (somethingelse)
+        if (distanceToTarget <= navMeshAgent.stoppingDistance)
         {
-            AttackTarget();  //test 2, the testining
+            AttackTarget();  
         }
-    }
-
-    private void AttackTarget()
-    {
-        throw new NotImplementedException();
     }
 
     private void ChaseTarget()
     {
-        throw new NotImplementedException();
+        navMeshAgent.SetDestination(target.position);
     }
+
+    private void AttackTarget()
+    {
+        print("die human");
+    }    
 
     void OnDrawGizmosSelected()
     {
