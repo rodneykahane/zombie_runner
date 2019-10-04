@@ -45,7 +45,7 @@ public class EnemyAI : MonoBehaviour
 
         if (somethingelse)
         {
-            AttackTarget();  //test
+            AttackTarget();  //test 2, the testining
         }
     }
 
