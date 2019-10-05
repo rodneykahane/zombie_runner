@@ -2041,6 +2041,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 1258899216}
   range: 100
+  damage: 30
+  muzzleFlash: {fileID: 7767009856327497331, guid: ce3ec3b12f129ab4587b019a258e35d1,
+    type: 3}
 --- !u!1001 &7389826366124750284
 PrefabInstance:
   m_ObjectHideFlags: 0
