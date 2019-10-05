@@ -56,7 +56,7 @@ public class EnemyAI : MonoBehaviour
 
     private void AttackTarget()
     {
-        print("die human");
+        Debug.Log(name+" has seeked and is destroying" + target.name);
     }    
 
     void OnDrawGizmosSelected()
