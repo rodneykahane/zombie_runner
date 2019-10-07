@@ -22,6 +22,9 @@ public class EnemyAttack : MonoBehaviour
         
     }
 
-
+    public void OnDamageTaken()
+    {
+        Debug.Log(name + " I also know that we took damage");
+    }
 
 }
