@@ -22,8 +22,11 @@ public class EnemyAttack : MonoBehaviour
         
     }
 
+
+    //this method isnt really doing anything, just an example to show how broadcastmessage works
     public void OnDamageTaken()
     {
+        //received info from broadcastmessage in EnemyHealth.CS
         Debug.Log(name + " I also know that we took damage");
     }
 
