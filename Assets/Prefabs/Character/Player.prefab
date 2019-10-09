@@ -523,11 +523,6 @@ PrefabInstance:
       objectReference: {fileID: 2000000}
     - target: {fileID: 6848756332168522207, guid: fc89912481daf614d9ffef21aa6cfbac,
         type: 3}
-      propertyPath: muzzleFlash
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6848756332168522207, guid: fc89912481daf614d9ffef21aa6cfbac,
-        type: 3}
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 5989877915499779590}
