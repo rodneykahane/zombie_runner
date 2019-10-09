@@ -516,6 +516,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114966803654839386, guid: fc89912481daf614d9ffef21aa6cfbac,
+        type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 5989877915499779590}
     - target: {fileID: 6848756332168522207, guid: fc89912481daf614d9ffef21aa6cfbac,
         type: 3}
       propertyPath: FPCamera
