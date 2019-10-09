@@ -13,8 +13,7 @@ public class Ammo : MonoBehaviour
     }
 
     public void ReduceCurrentAmmo()
-    {
-        Debug.Log("we called reduceammo");
+    {        
         ammoAmount--;
     }
 

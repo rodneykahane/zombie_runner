@@ -5,17 +5,12 @@ public class WeaponZoom : MonoBehaviour
 {
 
     [SerializeField] Camera fpsCamera;
+    [SerializeField] RigidbodyFirstPersonController fpsController;
     [SerializeField] float zoomRegularView = 60f;
     [SerializeField] float zoomInView = 20f;
     [SerializeField] float mouseZoomRegularSensitiviyFactor = 2f;
     [SerializeField] float mouseZoomInSensitiviyFactor = .5f;
 
-    RigidbodyFirstPersonController fpsController;
-
-    private void Start()
-    {
-        fpsController = GetComponent<RigidbodyFirstPersonController>();
-    }
 
     void Update()
     {
