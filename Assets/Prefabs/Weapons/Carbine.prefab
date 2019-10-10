@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 2337074158999389510}
   - component: {fileID: 1379276757818865084}
   - component: {fileID: 5316348938474010055}
+  - component: {fileID: 2335842760333727734}
   m_Layer: 0
   m_Name: Carbine
   m_TagString: Untagged
@@ -324,7 +325,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2337074158997199750}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b0774677bd7eba4fa71211d5de7337d, type: 3}
   m_Name: 
@@ -356,6 +357,32 @@ MonoBehaviour:
   zoomInView: 20
   mouseZoomRegularSensitiviyFactor: 2
   mouseZoomInSensitiviyFactor: 0.5
+--- !u!114 &2335842760333727734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337074158997199750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e44904c87c70741898557096ebc37a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  range: 35
+  damage: 30
+  muzzleFlash: {fileID: 8925841492578610358}
+  hitEffect: {fileID: 2053329249056727879, guid: 6488d39820600ad4a8030c4e3326ec95,
+    type: 3}
+  ammoSlot: {fileID: 0}
+  timeBetweenShots: 1
+  bulletPrefab: {fileID: 0}
+  casingPrefab: {fileID: 0}
+  muzzleFlashPrefab: {fileID: 0}
+  barrelLocation: {fileID: 0}
+  casingExitLocation: {fileID: 0}
+  shotPower: 100
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,6 +717,12 @@ PrefabInstance:
 --- !u!4 &8925841492578610340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3350055855090824723, guid: 4a60d8477aafac045a1f56d3a60c7813,
+    type: 3}
+  m_PrefabInstance: {fileID: 8925841492578610382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8925841492578610358 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3614249443508621660, guid: 4a60d8477aafac045a1f56d3a60c7813,
     type: 3}
   m_PrefabInstance: {fileID: 8925841492578610382}
   m_PrefabAsset: {fileID: 0}

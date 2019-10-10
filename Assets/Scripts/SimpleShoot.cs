@@ -43,11 +43,13 @@ public class SimpleShoot : MonoBehaviour
         // bullet.GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
 
         GameObject tempFlash;
+       
        Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
        tempFlash = Instantiate(muzzleFlashPrefab, barrelLocation.position, barrelLocation.rotation);
 
-       // Destroy(tempFlash, 0.5f);
-        //  Instantiate(casingPrefab, casingExitLocation.position, casingExitLocation.rotation).GetComponent<Rigidbody>().AddForce(casingExitLocation.right * 100f);
+        Destroy(tempFlash, 0.5f);
+        Destroy(bulletPrefab, 0.5f);
+      //    Instantiate(casingPrefab, casingExitLocation.position, casingExitLocation.rotation).GetComponent<Rigidbody>().AddForce(casingExitLocation.right * 100f);
        
     }
 
@@ -61,7 +63,7 @@ public class SimpleShoot : MonoBehaviour
 
     void DecreaseAmmo()
     {
-        Debug.Log("we calling decreaseammo?");
+        
         ammoSlot.ReduceCurrentAmmo();
     }
 

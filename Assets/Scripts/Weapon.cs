@@ -19,8 +19,7 @@ public class Weapon : MonoBehaviour
     {
 
         if (this.gameObject.tag == "Pistol")
-        {
-            Debug.Log("we calling pistol shoot?");
+        {            
             ShootPistol();
         }
 

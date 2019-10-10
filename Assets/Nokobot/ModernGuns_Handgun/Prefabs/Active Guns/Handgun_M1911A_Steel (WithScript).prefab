@@ -413,7 +413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4086005174234542}
   - component: {fileID: 95847998059205920}
-  - component: {fileID: 114966803654839386}
+  - component: {fileID: 4670514483601507090}
   m_Layer: 0
   m_Name: Handgun_M1911A_Steel (WithScript)
   m_TagString: Untagged
@@ -457,7 +457,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114966803654839386
+--- !u!114 &4670514483601507090
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -466,9 +466,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1569160750861012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6be84e4d7829855419c06b94e56bd135, type: 3}
+  m_Script: {fileID: 11500000, guid: 57e44904c87c70741898557096ebc37a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  range: 25
+  damage: 15
+  muzzleFlash: {fileID: 3614249443508621660, guid: 4a60d8477aafac045a1f56d3a60c7813,
+    type: 3}
+  hitEffect: {fileID: 2053329249056727879, guid: 6488d39820600ad4a8030c4e3326ec95,
+    type: 3}
+  ammoSlot: {fileID: 0}
+  timeBetweenShots: 0.5
   bulletPrefab: {fileID: 1900734910723676, guid: 67c3c990b6c48af469e31db314977502,
     type: 3}
   casingPrefab: {fileID: 1482960508195586, guid: 91dcfdffdc6d38e47916b9c549e26dac,
@@ -477,8 +486,7 @@ MonoBehaviour:
     type: 3}
   barrelLocation: {fileID: 4493519541437738}
   casingExitLocation: {fileID: 4123556266775812}
-  ammoSlot: {fileID: 0}
-  shotPower: 730
+  shotPower: 750
 --- !u!1 &1607888903376170
 GameObject:
   m_ObjectHideFlags: 0
