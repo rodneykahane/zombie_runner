@@ -27,12 +27,45 @@ public class WeaponSwitcher : MonoBehaviour
 
     private void ProcessKeyInput()
     {
-        throw new NotImplementedException();
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            currentWeapon = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            currentWeapon = 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            currentWeapon = 2;
+        }
     }
 
     private void ProcessScrollWheel()
     {
-        throw new NotImplementedException();
+        if(Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
+            if(currentWeapon >= transform.childCount - 1)
+            {
+                currentWeapon = 0;
+            }
+            else
+            {
+                currentWeapon++;
+            }
+        }
+        
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            if (currentWeapon <= 0)
+            {
+                currentWeapon = transform.childCount-1;
+            }
+            else
+            {
+                currentWeapon--;
+            }
+        }
     }
 
 
