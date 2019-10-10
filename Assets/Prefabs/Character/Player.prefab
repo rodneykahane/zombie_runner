@@ -352,6 +352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4490814563404914961}
+  - component: {fileID: 885916741189537677}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -376,6 +377,18 @@ Transform:
   m_Father: {fileID: 400000}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &885916741189537677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841089773610984456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a5b9ab16e115754b96392f8c52973bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &281750180770835235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -546,16 +559,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4490814563404914961}
     m_Modifications:
-    - target: {fileID: 5316348938474010055, guid: ada2587319194f542957a8c2ae277cb9,
-        type: 3}
-      propertyPath: fpsCamera
-      value: 
-      objectReference: {fileID: 2000000}
-    - target: {fileID: 5316348938474010055, guid: ada2587319194f542957a8c2ae277cb9,
-        type: 3}
-      propertyPath: fpsController
-      value: 
-      objectReference: {fileID: 11400004}
     - target: {fileID: 2337074158997199750, guid: ada2587319194f542957a8c2ae277cb9,
         type: 3}
       propertyPath: m_Name
@@ -636,6 +639,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5316348938474010055, guid: ada2587319194f542957a8c2ae277cb9,
+        type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 2000000}
+    - target: {fileID: 5316348938474010055, guid: ada2587319194f542957a8c2ae277cb9,
+        type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 11400004}
     - target: {fileID: 1379276757818865084, guid: ada2587319194f542957a8c2ae277cb9,
         type: 3}
       propertyPath: FPCamera
