@@ -269,7 +269,7 @@ Transform:
   - {fileID: 2337074158996965294}
   - {fileID: 2337074158996965288}
   - {fileID: 3760781081078919883}
-  - {fileID: 8925841492578610340}
+  - {fileID: 6170845762859096797}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -370,12 +370,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 0}
-  range: 35
+  range: 50
   damage: 30
-  muzzleFlash: {fileID: 8925841492578610358}
+  muzzleFlash: {fileID: 5329606859943525778}
   hitEffect: {fileID: 2053329249056727879, guid: 6488d39820600ad4a8030c4e3326ec95,
     type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 2
   timeBetweenShots: 1
   bulletPrefab: {fileID: 0}
   casingPrefab: {fileID: 0}
@@ -714,13 +715,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}
---- !u!4 &8925841492578610340 stripped
+--- !u!4 &6170845762859096797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3350055855090824723, guid: 4a60d8477aafac045a1f56d3a60c7813,
     type: 3}
   m_PrefabInstance: {fileID: 8925841492578610382}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &8925841492578610358 stripped
+--- !u!198 &5329606859943525778 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 3614249443508621660, guid: 4a60d8477aafac045a1f56d3a60c7813,
     type: 3}

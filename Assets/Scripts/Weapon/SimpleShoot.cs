@@ -11,6 +11,7 @@ public class SimpleShoot : MonoBehaviour
     public Transform barrelLocation;
     public Transform casingExitLocation;
     [SerializeField] Ammo ammoSlot;
+    [SerializeField] AmmoType ammoType;
 
 
     public float shotPower = 100f;
@@ -24,7 +25,7 @@ public class SimpleShoot : MonoBehaviour
 
     void Update()
     {
-        if (ammoSlot.GetCurrentAmmo() > 0)
+        if (ammoSlot.GetCurrentAmmo(ammoType) > 0)
         {
             if (Input.GetButtonDown("Fire1"))
             {
@@ -64,7 +65,7 @@ public class SimpleShoot : MonoBehaviour
     void DecreaseAmmo()
     {
         
-        ammoSlot.ReduceCurrentAmmo();
+        ammoSlot.ReduceCurrentAmmo(ammoType);
     }
 
 
