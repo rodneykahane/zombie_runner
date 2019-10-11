@@ -337,6 +337,7 @@ MonoBehaviour:
   hitEffect: {fileID: 2053329249056727879, guid: 6488d39820600ad4a8030c4e3326ec95,
     type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 0
   timeBetweenShots: 2
 --- !u!114 &5962359419468726747
 MonoBehaviour:
@@ -358,7 +359,7 @@ MonoBehaviour:
     type: 3}
   ammoSlot: {fileID: 0}
   ammoType: 1
-  timeBetweenShots: 2
+  timeBetweenShots: 1.25
   bulletPrefab: {fileID: 0}
   casingPrefab: {fileID: 0}
   muzzleFlashPrefab: {fileID: 0}
