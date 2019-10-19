@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class WeaponsMerge : MonoBehaviour
@@ -15,6 +16,7 @@ public class WeaponsMerge : MonoBehaviour
     [SerializeField] Ammo ammoSlot;
     [SerializeField] AmmoType ammoType;
     [SerializeField] float timeBetweenShots = .5f;
+    [SerializeField] TextMeshProUGUI ammoText;
 
 
     bool canShoot = true;
@@ -58,8 +60,16 @@ public class WeaponsMerge : MonoBehaviour
             StartCoroutine(Shoot());
         }
 
+        DisplayAmmo();
+
     }
 
+    private void DisplayAmmo()
+    {
+        int currentAmmo = ammoSlot.GetCurrentAmmo(ammoType);
+
+        ammoText.text = currentAmmo.ToString();
+    }
 
     IEnumerator Shoot()
     {
