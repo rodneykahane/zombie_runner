@@ -10,7 +10,7 @@ public class EnemyAttack : MonoBehaviour
 
     void Start()
     {
-        target = FindObjectOfType<PlayerHealth>();
+        target = FindObjectOfType<PlayerHealth>();        
     }
 
    public void AttackHitEvent()
@@ -18,7 +18,8 @@ public class EnemyAttack : MonoBehaviour
         
         if (target == null) return;
         Debug.Log("successful enemy attack");
-        target.ReceiveDamage(damage);        
+        target.ReceiveDamage(damage);
+        target.GetComponent<DisplayDamage>().ShowDamageImpact();
         
     }
 
