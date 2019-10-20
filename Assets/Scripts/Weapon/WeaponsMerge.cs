@@ -68,7 +68,7 @@ public class WeaponsMerge : MonoBehaviour
     {
         int currentAmmo = ammoSlot.GetCurrentAmmo(ammoType);
 
-        ammoText.text = currentAmmo.ToString();
+        ammoText.text = "Ammo: " + currentAmmo.ToString();
     }
 
     IEnumerator Shoot()

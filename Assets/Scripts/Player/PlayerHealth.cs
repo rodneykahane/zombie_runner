@@ -17,9 +17,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void DisplayPlayerHealth()
     {
-
-
-        healthText.text = playerHealthPoints.ToString();
+        healthText.text = "Health: "+playerHealthPoints.ToString();
     }
 
     public void ReceiveDamage(float damageTaken)
