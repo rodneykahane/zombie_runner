@@ -43,8 +43,10 @@ public class Flashlight_PRO : MonoBehaviour
 	/// switch current state  ON / OFF.
 	/// call this from other scripts.
 	/// </summary>
-	public void Switch()
+	public void Switch(bool turnOn)
 	{
+        is_enabled = turnOn;
+
 		is_enabled = !is_enabled; 
 
 		Lights.SetActive (is_enabled);

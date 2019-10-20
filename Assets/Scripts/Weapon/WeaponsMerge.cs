@@ -17,6 +17,7 @@ public class WeaponsMerge : MonoBehaviour
     [SerializeField] AmmoType ammoType;
     [SerializeField] float timeBetweenShots = .5f;
     [SerializeField] TextMeshProUGUI ammoText;
+    [SerializeField] GameObject flashLight;
 
 
     bool canShoot = true;
@@ -55,13 +56,25 @@ public class WeaponsMerge : MonoBehaviour
             ShootPistol();
         }
 
+        else if (Input.GetButtonDown("Fire1") && this.gameObject.tag == "Flashlight")
+        {
+            UseFlashLight();
+        }
+
         else if (Input.GetButtonDown("Fire1") && canShoot == true)
         {
             StartCoroutine(Shoot());
-        }
+        }       
 
         DisplayAmmo();
 
+    }
+
+    private void UseFlashLight()
+    {
+        FindObjectOfType<Flashlight_PRO>().Switch(true);
+
+        Debug.Log("using flashlight");
     }
 
     private void DisplayAmmo()
