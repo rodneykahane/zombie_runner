@@ -72,7 +72,7 @@ public class WeaponsMerge : MonoBehaviour
 
     private void UseFlashLight()
     {
-        FindObjectOfType<Flashlight_PRO>().Switch(true);
+        FindObjectOfType<Flashlight_PRO>().Switch();
 
         Debug.Log("using flashlight");
     }

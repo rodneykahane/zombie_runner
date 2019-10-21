@@ -33,21 +33,24 @@ public class Flashlight_PRO : MonoBehaviour
 	{
 		percentage = Mathf.Clamp (percentage, 0, 100);
 
-
 		spotlight.intensity = (8 * percentage) / 100;
 
-		ambient_light_material.SetColor ("_TintColor", new Color(ambient_mat_color.r , ambient_mat_color.g , ambient_mat_color.b , percentage/2000)); 
+        Debug.Log("spolight intensity is: " + spotlight.intensity);
+
+        ambient_light_material.SetColor ("_TintColor", new Color(ambient_mat_color.r , ambient_mat_color.g , ambient_mat_color.b , percentage/2000)); 
 	}
 
 	/// <summary>
 	/// switch current state  ON / OFF.
 	/// call this from other scripts.
 	/// </summary>
-	public void Switch(bool turnOn)
-	{
-        is_enabled = turnOn;
+	public void Switch()
+	{     
 
-		is_enabled = !is_enabled; 
+		is_enabled = !is_enabled;
+
+        //Debug.Log("spolight intensity is: " + spotlight.intensity);
+        spotlight.intensity = 6.2f;
 
 		Lights.SetActive (is_enabled);
 
